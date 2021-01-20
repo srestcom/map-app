@@ -1,0 +1,47 @@
+  <div class="container">
+    <h3>{{message}}</h3>
+    <form [formGroup]="featureForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" id="address" formControlName="address">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" class="form-control" id="city" formControlName="city">
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" class="form-control" id="country" formControlName="country">
+        </div>
+        <div class="form-group">
+            <label for="roofMaterial">Roof Material:</label>
+            <input type="text" class="form-control" id="roofMaterial" formControlName="roofMaterial">
+        </div>
+        <div class="form-group">
+            <label for="roofType">Roof Type:</label>
+            <input type="text" class="form-control" id="roofType" formControlName="roofType">
+        </div>
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input type="text" class="form-control" id="area" formControlName="area">
+        </div>
+        <div class="form-group">
+            <label for="storeys">Storeys:</label>
+            <input type="text" class="form-control" id="storeys" formControlName="storeys">
+        </div>
+        <div class="form-group">
+            <label for="height">Height:</label>
+            <input type="text" class="form-control" id="height" formControlName="height">
+        </div>
+        <div class="form-group">
+            <label for="geometry">Geometry:</label>
+            <div id="geometry">
+                {{ geometry }}
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <button type="submit" class="btn-primary" style="margin: 20px;" >Save </button>
+        </div>       
+    </form>
+
+  </div>

@@ -1,0 +1,24 @@
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+            <th>Address</th>
+            <th>City</th>
+            <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let feature of features" (click)="edit(feature)">
+                <td>{{ feature.properties.address }}</td>
+                <td>{{ feature.properties.city }} </td>
+                <td>{{ feature.properties.country }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="row justify-content-end">
+        <button  class="btn-primary" (click)="add()" > Add New </button>
+    </div>
+</div>
+

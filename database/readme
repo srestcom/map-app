@@ -1,0 +1,9 @@
+Here are the sets performed to load table with data.
+All the steps needs to reviewed for automatic deployment.
+(1) Installed PostgreSQL from https://www.postgresql.org/download/
+(2) Create table using following sql - CREATE TABLE features (feature json NOT NULL);
+(3) Load table using script following command -  \copy features from dbdump
+(4) Check if the data was successfully loaded using -  select * from features; 
+It should return 5 rows of data
+
+Mock api was used for API. Update was not implemented, though it is fairly easy to implemt in node, it just take few days.
