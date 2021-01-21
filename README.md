@@ -1,5 +1,7 @@
 
 # Description
+
+Live demo based on mocked data can be seen @ http://srest.com/map/
 Create an app which displays and allows to edit properties of a building list. - DONE
 Usage of all npm packages is allowed.
 
